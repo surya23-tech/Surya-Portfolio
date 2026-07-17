@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g1)" />
+  <!-- laptop -->
+  <g transform="translate(160,220) scale(1.1)">
+    <rect x="140" y="60" width="820" height="460" rx="20" fill="#fff" opacity="0.08" />
+    <rect x="170" y="100" width="760" height="360" rx="10" fill="#0f172a" opacity="0.12" />
+    <rect x="220" y="140" width="660" height="260" rx="8" fill="#ffffff22" />
+    <!-- UI cards -->
+    <rect x="240" y="160" width="320" height="80" rx="8" fill="#ffffff22" />
+    <rect x="240" y="260" width="300" height="90" rx="8" fill="#ffffff15" />
+  </g>
+  <!-- mobile -->
+  <g transform="translate(1040,300)">
+    <rect x="0" y="0" width="220" height="420" rx="30" fill="#ffffff14" />
+    <rect x="24" y="36" width="172" height="72" rx="10" fill="#ffffff22" />
+    <rect x="24" y="120" width="172" height="220" rx="12" fill="#ffffff0f" />
+  </g>
+  <!-- shopping cart icon simplified -->
+  <g transform="translate(80,560) scale(1.6)">
+    <rect x="0" y="0" width="160" height="100" rx="12" fill="#ffffff22" />
+    <circle cx="40" cy="120" r="14" fill="#fff" opacity="0.9" />
+    <circle cx="120" cy="120" r="14" fill="#fff" opacity="0.9" />
+  </g>
+</svg>

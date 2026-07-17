@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g4" x1="0" x2="1">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g4)" />
+  <!-- farmland silhouettes -->
+  <g transform="translate(80,320)">
+    <rect x="0" y="120" width="1440" height="260" rx="12" fill="#ffffff10" />
+    <g transform="translate(120,40)">
+      <rect x="0" y="0" width="140" height="200" rx="12" fill="#ffffff18" />
+      <rect x="200" y="0" width="120" height="180" rx="12" fill="#ffffff18" />
+      <rect x="360" y="0" width="160" height="220" rx="12" fill="#ffffff18" />
+    </g>
+  </g>
+  <!-- farmer with phone -->
+  <g transform="translate(1100,240)">
+    <rect x="0" y="0" width="120" height="220" rx="20" fill="#ffffff14" />
+    <rect x="20" y="28" width="80" height="40" rx="8" fill="#ffffff22" />
+  </g>
+</svg>

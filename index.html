@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya D | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- EmailJS v4 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--================ NAVBAR ================-->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+Surya <span>D</span>
+</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<button id="theme-toggle" aria-pressed="false" title="Toggle theme">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+<button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="navLinks" title="Toggle menu">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--================ HERO SECTION ================-->
+
+<section class="hero" id="home" aria-label="Hero">
+
+    <div class="hero-inner">
+
+        <div class="hero-left" data-aos="fade-up">
+
+            <div class="hero-badge">
+                <span class="badge-icon">☁️</span>
+                <span id="hero-badge-text" class="badge-text">ASPIRING CLOUD ENGINEER</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="muted">Hi, I'm</span>
+                <span class="name gradient">Surya D</span>
+            </h1>
+
+            <div id="subtitle-pills" class="subtitle-pills" aria-hidden="false"></div>
+
+            <p class="hero-description">
+                I am a Third Year Computer Science Engineering student at PSNA College of Engineering and Technology, passionate about Cloud Computing, Java Development, Artificial Intelligence, and building scalable applications. I enjoy learning modern technologies and solving real-world problems through innovative software solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary"><span class="emoji">🚀</span> View Projects</a>
+                <a href="resume.pdf" download="Surya_D_Resume.pdf" class="btn secondary"><span class="emoji">📄</span> Download Resume</a>
+            </div>
+
+            <div class="hero-socials" aria-label="Social links">
+                <a class="social" href="https://github.com/surya23-tech" target="_blank" rel="noopener" data-tooltip="GitHub" title="GitHub">
+                    <span class="icon fab fa-github"></span>
+                </a>
+                <a class="social" href="https://linkedin.com/in/surya-d-80b869333" target="_blank" rel="noopener" data-tooltip="LinkedIn" title="LinkedIn">
+                    <span class="icon fab fa-linkedin"></span>
+                </a>
+                <a class="social" href="https://www.instagram.com/itz_surya_151?igsh=MWpwYjNlY285dXBkbg==" target="_blank" rel="noopener" data-tooltip="Instagram" title="Instagram">
+                    <span class="icon fab fa-instagram"></span>
+                </a>
+                <a class="social" href="mailto:surya11066@gmail.com" data-tooltip="Email" title="Email">
+                    <span class="icon fa-solid fa-envelope"></span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-right" data-aos="fade-up">
+            <div class="profile-card glass">
+                <div class="profile-glow"></div>
+                <img src="assets/images/profile.jpeg" alt="Surya D" class="profile-photo">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- decorative blurred blobs -->
+    <div class="hero-blobs" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <span class="blob b3"></span>
+    </div>
+
+</section>
+
+<!-- Mobile drawer (slide-in) -->
+<div id="mobile-drawer" aria-hidden="true">
+    <aside class="mobile-drawer">
+        <button class="drawer-close" aria-label="Close menu">✕</button>
+        <nav class="drawer-nav">
+            <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+            <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+            <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+            <a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </nav>
+    </aside>
+</div>
+
+<!--================ ABOUT ================-->
+
+<section class="about" id="about">
+
+<div class="section-title">
+
+<h2>
+
+About Me
+
+</h2>
+
+<p>
+
+Who I Am
+
+</p>
+
+</div>
+
+<div class="about-container">
+
+<div class="about-card" data-aos="fade-up">
+
+<h3>
+
+Hello 👋
+
+</h3>
+
+
+<p>
+
+I'm <b>Surya D</b>, an aspiring Cloud Engineer and Computer Science Engineering student who builds practical and scalable software solutions. I enjoy working with cloud platforms, Java, and AI technologies while continuously learning through projects and hackathons.
+
+</p>
+
+<br>
+
+
+<p>
+
+My primary interests include
+
+<b>
+
+Cloud Computing,
+
+Java Development,
+
+Artificial Intelligence,
+
+and Scalable Systems.
+
+</b>
+
+I believe technology should solve real-world problems, and I focus on building cloud-ready applications.
+
+</p>
+
+<br>
+
+<p>
+
+I am currently enhancing my technical knowledge through projects, hackathons, certifications, and continuous learning. My goal is to become a skilled Software Engineer capable of designing scalable and efficient systems.
+
+</p>
+
+</div>
+
+<div class="quick-info" data-aos="fade-left">
+
+<div class="info-box">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+<h4>Degree</h4>
+
+<p>B.E Computer Science and Engineering</p>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-building-columns"></i>
+
+<h4>College</h4>
+
+<p>PSNA College of Engineering and Technology</p>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-calendar"></i>
+
+<h4>Current Year</h4>
+
+<p>Third Year</p>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h4>Location</h4>
+
+<p>Tamil Nadu, India</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ EDUCATION ================-->
+
+<section id="education">
+
+<div class="section-title">
+
+<h2>
+
+Education
+
+</h2>
+
+<p>
+
+Academic Journey
+
+</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item" data-aos="fade-right">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+</div>
+
+<div class="timeline-content">
+
+<h3>
+
+B.E Computer Science and Engineering
+
+</h3>
+
+<h4>
+
+PSNA College of Engineering and Technology
+
+</h4>
+
+<p>
+
+Academic Duration: 2024–2028
+
+</p>
+
+<span>
+
+Current Status: Third Year
+
+</span>
+
+<p>
+
+Courses include Data Structures, Java Programming, Operating Systems, DBMS, Computer Networks, and Web Development.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item" data-aos="fade-left">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-school"></i>
+
+</div>
+
+<div class="timeline-content">
+
+<h3>
+
+Higher Secondary Education
+
+</h3>
+
+<p>
+
+Completed Higher Secondary with Computer Science stream and developed a strong interest in programming and software development.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Skills section continues in Part 2 -->
+ <!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<div class="section-title">
+<h2>Technical Skills</h2>
+<p>My Technical Expertise</p>
+</div>
+
+<div class="skills-container">
+
+<div class="skill-card" data-aos="zoom-in">
+<h3>Programming</h3>
+
+<div class="skill">
+<span>Java</span>
+<div class="progress"><div style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<span>Python</span>
+<div class="progress"><div style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<span>C</span>
+<div class="progress"><div style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<span>C++</span>
+<div class="progress"><div style="width:80%"></div></div>
+</div>
+
+</div>
+
+<div class="skill-card" data-aos="zoom-in">
+
+<h3>Web Development</h3>
+
+<div class="skill">
+<span>HTML</span>
+<div class="progress"><div style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<span>CSS</span>
+<div class="progress"><div style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<span>JavaScript</span>
+<div class="progress"><div style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<span>Node.js</span>
+<div class="progress"><div style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<span>MongoDB</span>
+<div class="progress"><div style="width:75%"></div></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<div class="section-title">
+<h2>Projects</h2>
+<p>Some of My Works</p>
+</div>
+
+<div class="project-grid">
+
+<div class="project-card" data-aos="fade-up">
+    <div class="project-thumb">
+        <img src="assets/projects/smartcart.svg" alt="SmartCart thumbnail">
+    </div>
+    <div class="project-content">
+        <h3>SmartCart E-Commerce Website</h3>
+        <div class="project-meta">
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+            </div>
+            <span class="status-badge status-completed">Completed</span>
+        </div>
+        <p>
+            An e-commerce website built as an academic/full-stack project using HTML, CSS, JavaScript, Node.js and MongoDB.
+        </p>
+        <div class="project-buttons">
+            <!-- GitHub button: data-project identifies this project for centralized config -->
+            <a href="#" class="btn primary github-btn" data-project="smartcart">GitHub</a>
+        </div>
+    </div>
+</div>
+
+<div class="project-card" data-aos="fade-up">
+    <div class="project-thumb">
+        <img src="assets/projects/farmer.svg" alt="Farmer Labour Management thumbnail">
+    </div>
+    <div class="project-content">
+        <h3>Farmer Labour Management System</h3>
+        <div class="project-meta">
+            <div class="tech-stack">
+                <span>Java</span>
+                <span>SQLite</span>
+                <span>Swing</span>
+            </div>
+            <span class="status-badge status-inprogress">In Progress</span>
+        </div>
+        <p>
+            A management system for farmers to handle labour, attendance and payroll records (academic project).
+        </p>
+        <div class="project-buttons">
+            <a href="#" class="btn primary github-btn" data-project="farmer">GitHub</a>
+        </div>
+    </div>
+</div>
+
+<div class="project-card" data-aos="fade-up">
+    <div class="project-thumb">
+        <img src="assets/projects/restaurant.svg" alt="Restaurant Billing thumbnail">
+    </div>
+    <div class="project-content">
+        <h3>Restaurant Billing System</h3>
+        <div class="project-meta">
+            <div class="tech-stack">
+                <span>Java</span>
+                <span>Swing</span>
+                <span>MySQL</span>
+            </div>
+            <span class="status-badge status-completed">Completed</span>
+        </div>
+        <p>
+Desktop Java Swing application to automate restaurant billing (academic project).
+</p>
+        <div class="project-buttons">
+            <a href="#" class="btn primary github-btn" data-project="restaurant">GitHub</a>
+        </div>
+    </div>
+</div>
+
+<div class="project-card" data-aos="fade-up">
+    <div class="project-thumb">
+        <img src="assets/projects/moviefinder.svg" alt="Movie Finder thumbnail">
+    </div>
+    <div class="project-content">
+        <h3>Movie Finder</h3>
+        <div class="project-meta">
+            <div class="tech-stack">
+                <span>JavaScript</span>
+                <span>Fetch API</span>
+                <span>CSS</span>
+            </div>
+            <span class="status-badge status-inprogress">In Progress</span>
+        </div>
+        <p>
+            A small project that helps users search movies using a public API and view details.
+        </p>
+        <div class="project-buttons">
+            <a href="#" class="btn primary github-btn" data-project="moviefinder">GitHub</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievements">
+
+<div class="section-title">
+<h2>Achievements</h2>
+<p>Genuine Milestones</p>
+</div>
+
+<div class="achievement-grid">
+
+<div class="achievement-card">
+<i class="fa-solid fa-diagram-project"></i>
+<h3>Built Multiple Projects</h3>
+<p>Academic and personal projects across web and desktop</p>
+</div>
+
+<div class="achievement-card">
+<i class="fa-solid fa-medal"></i>
+<h3>Hackathons</h3>
+<p>Participated in hackathons and coding events</p>
+</div>
+
+<div class="achievement-card">
+<i class="fa-solid fa-cloud"></i>
+<h3>Learning Cloud</h3>
+<p>Focused on Cloud Computing and related technologies</p>
+</div>
+
+<div class="achievement-card">
+<i class="fa-solid fa-book-open"></i>
+<h3>Continuous Learning</h3>
+<p>Ongoing self-study and certifications</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="section-title">
+<h2>Contact Me</h2>
+<p>Let's Connect</p>
+</div>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>Get In Touch</h3>
+
+<p>
+Feel free to reach out regarding internships, projects or collaborations.
+</p>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+
+surya11066@gmail.com
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+
+Tamil Nadu, India
+</p>
+
+<p>
+<i class="fa-brands fa-github"></i>
+
+<a href="https://github.com/surya23-tech" target="_blank" rel="noopener">github.com/surya23-tech</a>
+</p>
+
+<p>
+<i class="fa-brands fa-linkedin"></i>
+
+<a href="https://linkedin.com/in/surya-d-80b869333" target="_blank" rel="noopener">linkedin.com/in/surya-d-80b869333</a>
+</p>
+
+
+</div>
+
+<!-- Contact form: EmailJS integration (no FormSubmit) -->
+<form id="contact-form" class="contact-form">
+
+<input
+type="text"
+name="from_name"
+id="contact-name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+name="from_email"
+id="contact-email"
+placeholder="Your Email"
+required>
+
+<textarea
+name="message"
+id="contact-message"
+rows="6"
+placeholder="Message"
+required></textarea>
+
+<div id="form-status" class="form-status" aria-live="polite" style="display:none;"></div>
+
+<button id="contact-submit" class="btn primary" type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>
+
+Surya D
+
+</h2>
+
+<p>
+
+Computer Science Engineering Student
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved.
+
+</p>
+
+</footer>
+
+<a href="#" id="scrollTop">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
