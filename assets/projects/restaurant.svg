@@ -1,23 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
-  <defs>
-    <linearGradient id="g2" x1="0" x2="1">
-      <stop offset="0%" stop-color="#fb923c"/>
-      <stop offset="100%" stop-color="#7c2d12"/>
-    </linearGradient>
-  </defs>
-  <rect width="100%" height="100%" fill="url(#g2)" />
-  <!-- POS screen -->
-  <g transform="translate(180,160) scale(1.05)">
-    <rect x="120" y="80" width="760" height="520" rx="18" fill="#00000022" />
-    <rect x="160" y="120" width="680" height="420" rx="12" fill="#ffffff10" />
-    <!-- receipt stylized -->
-    <rect x="860" y="200" width="140" height="260" rx="8" fill="#ffffff18" />
-    <rect x="880" y="220" width="100" height="20" rx="4" fill="#ffffff2a" />
-    <rect x="880" y="260" width="100" height="16" rx="4" fill="#ffffff22" />
-    <rect x="880" y="300" width="80" height="16" rx="4" fill="#ffffff22" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Restaurant billing and point of sale interface illustration</title>
+  <rect width="1200" height="675" fill="#f5f1ed"/>
+  <rect x="40" y="34" width="1120" height="607" rx="18" fill="#fff"/>
+  <path d="M40 52q0-18 18-18h1084q18 0 18 18v54H40z" fill="#34291f"/>
+  <circle cx="78" cy="70" r="15" fill="#e39b54"/>
+  <path d="M70 72h16m-14-6q6-10 12 0" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2.5"/>
+  <text x="107" y="77" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Table &amp; Thyme</text>
+  <text x="928" y="75" fill="#eedccc" font-family="Arial,sans-serif" font-size="14">Restaurant billing</text>
+  <text x="77" y="151" fill="#34291f" font-family="Arial,sans-serif" font-size="25" font-weight="700">Menu</text>
+  <text x="77" y="176" fill="#8a7c70" font-family="Arial,sans-serif" font-size="14">Select items for the current order</text>
+  <g font-family="Arial,sans-serif" font-size="13" font-weight="700">
+    <rect x="77" y="198" width="91" height="34" rx="8" fill="#f8eadb"/><text x="97" y="220" fill="#995d2d">All items</text>
+    <rect x="178" y="198" width="102" height="34" rx="8" fill="#f4f6f7"/><text x="200" y="220" fill="#6e777e">Mains</text>
+    <rect x="290" y="198" width="112" height="34" rx="8" fill="#f4f6f7"/><text x="310" y="220" fill="#6e777e">Drinks</text>
   </g>
-  <!-- cashier tray -->
-  <g transform="translate(120,560)">
-    <rect x="0" y="0" width="420" height="160" rx="20" fill="#ffffff14" />
+  <g transform="translate(77 250)">
+    <rect width="220" height="274" rx="12" fill="#faf8f6" stroke="#eee8e2"/>
+    <rect x="13" y="13" width="194" height="143" rx="8" fill="#e8c89f"/>
+    <ellipse cx="110" cy="85" rx="61" ry="49" fill="#fff2d6"/><path d="M69 84q41-41 82 0-41 41-82 0" fill="#a64f35"/><circle cx="97" cy="80" r="5" fill="#79a153"/><circle cx="119" cy="93" r="5" fill="#79a153"/>
+    <text x="15" y="187" fill="#34291f" font-family="Arial,sans-serif" font-size="16" font-weight="700">House special</text>
+    <text x="15" y="214" fill="#8a7c70" font-family="Arial,sans-serif" font-size="13">Menu item</text>
+    <text x="15" y="251" fill="#a96130" font-family="Arial,sans-serif" font-size="15" font-weight="700">Add to order</text>
   </g>
+  <g transform="translate(315 250)">
+    <rect width="220" height="274" rx="12" fill="#faf8f6" stroke="#eee8e2"/>
+    <rect x="13" y="13" width="194" height="143" rx="8" fill="#e7edf1"/>
+    <ellipse cx="110" cy="85" rx="61" ry="49" fill="#fff"/><path d="M68 85h84q-5 34-42 34T68 85" fill="#d79f59"/><path d="M84 74q26-16 52 0" fill="none" stroke="#5d874f" stroke-width="7" stroke-linecap="round"/>
+    <text x="15" y="187" fill="#34291f" font-family="Arial,sans-serif" font-size="16" font-weight="700">Garden plate</text>
+    <text x="15" y="214" fill="#8a7c70" font-family="Arial,sans-serif" font-size="13">Menu item</text>
+    <text x="15" y="251" fill="#a96130" font-family="Arial,sans-serif" font-size="15" font-weight="700">Add to order</text>
+  </g>
+  <g transform="translate(553 250)">
+    <rect width="220" height="274" rx="12" fill="#faf8f6" stroke="#eee8e2"/>
+    <rect x="13" y="13" width="194" height="143" rx="8" fill="#f1e5d6"/>
+    <path d="M90 42h40l-5 75H95z" fill="#fff" stroke="#b67c4e" stroke-width="4"/><path d="M96 76h29l-3 33H99z" fill="#d58b39"/><path d="M90 46h40" stroke="#b67c4e" stroke-width="7"/>
+    <text x="15" y="187" fill="#34291f" font-family="Arial,sans-serif" font-size="16" font-weight="700">Fresh drink</text>
+    <text x="15" y="214" fill="#8a7c70" font-family="Arial,sans-serif" font-size="13">Menu item</text>
+    <text x="15" y="251" fill="#a96130" font-family="Arial,sans-serif" font-size="15" font-weight="700">Add to order</text>
+  </g>
+  <rect x="801" y="130" width="320" height="445" rx="14" fill="#fcfaf8" stroke="#eee8e2"/>
+  <text x="827" y="170" fill="#34291f" font-family="Arial,sans-serif" font-size="20" font-weight="700">Current bill</text>
+  <text x="827" y="195" fill="#8a7c70" font-family="Arial,sans-serif" font-size="13">Order summary</text>
+  <path d="M827 215h268" stroke="#e8dfd7"/>
+  <g fill="#574b41" font-family="Arial,sans-serif" font-size="14"><text x="827" y="251">Selected item</text><text x="827" y="293">Selected item</text><text x="827" y="335">Selected item</text></g>
+  <g fill="#9a8d82" font-family="Arial,sans-serif" font-size="12"><text x="827" y="270">Qty 1</text><text x="827" y="312">Qty 1</text><text x="827" y="354">Qty 1</text></g>
+  <path d="M827 380h268" stroke="#e8dfd7"/>
+  <text x="827" y="416" fill="#8a7c70" font-family="Arial,sans-serif" font-size="13">Bill total</text>
+  <rect x="827" y="446" width="268" height="48" rx="8" fill="#a96130"/>
+  <text x="908" y="476" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">Review bill</text>
 </svg>

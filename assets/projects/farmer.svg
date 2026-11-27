@@ -1,23 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
-  <defs>
-    <linearGradient id="g4" x1="0" x2="1">
-      <stop offset="0%" stop-color="#16a34a"/>
-      <stop offset="100%" stop-color="#059669"/>
-    </linearGradient>
-  </defs>
-  <rect width="100%" height="100%" fill="url(#g4)" />
-  <!-- farmland silhouettes -->
-  <g transform="translate(80,320)">
-    <rect x="0" y="120" width="1440" height="260" rx="12" fill="#ffffff10" />
-    <g transform="translate(120,40)">
-      <rect x="0" y="0" width="140" height="200" rx="12" fill="#ffffff18" />
-      <rect x="200" y="0" width="120" height="180" rx="12" fill="#ffffff18" />
-      <rect x="360" y="0" width="160" height="220" rx="12" fill="#ffffff18" />
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Farmer labour management dashboard illustration</title>
+  <rect width="1200" height="675" fill="#edf5f1"/>
+  <rect x="42" y="36" width="1116" height="603" rx="18" fill="#fff"/>
+  <path d="M42 54q0-18 18-18h195v603H60q-18 0-18-18z" fill="#173d35"/>
+  <circle cx="92" cy="91" r="22" fill="#4cae7b"/>
+  <path d="M81 99q11-25 22 0m-21-12a10 10 0 1 0 20 0" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+  <text x="126" y="87" fill="#fff" font-family="Arial,sans-serif" font-size="17" font-weight="700">FieldDesk</text>
+  <text x="126" y="107" fill="#a8cec0" font-family="Arial,sans-serif" font-size="12">FARM MANAGEMENT</text>
+  <g fill="#d5e7df" font-family="Arial,sans-serif" font-size="15">
+    <text x="78" y="175">Overview</text><text x="78" y="225">Labour</text><text x="78" y="275">Attendance</text><text x="78" y="325">Payroll</text>
   </g>
-  <!-- farmer with phone -->
-  <g transform="translate(1100,240)">
-    <rect x="0" y="0" width="120" height="220" rx="20" fill="#ffffff14" />
-    <rect x="20" y="28" width="80" height="40" rx="8" fill="#ffffff22" />
+  <circle cx="62" cy="169" r="4" fill="#77d39e"/><circle cx="62" cy="219" r="4" fill="#77d39e"/><circle cx="62" cy="269" r="4" fill="#77d39e"/><circle cx="62" cy="319" r="4" fill="#77d39e"/>
+  <text x="292" y="92" fill="#18352e" font-family="Arial,sans-serif" font-size="26" font-weight="700">Labour overview</text>
+  <text x="292" y="119" fill="#71857d" font-family="Arial,sans-serif" font-size="14">Manage worker records and daily operations</text>
+  <rect x="292" y="153" width="250" height="85" rx="10" fill="#f4f8f5" stroke="#e1ebe4"/>
+  <rect x="560" y="153" width="250" height="85" rx="10" fill="#f4f8f5" stroke="#e1ebe4"/>
+  <rect x="828" y="153" width="286" height="85" rx="10" fill="#f4f8f5" stroke="#e1ebe4"/>
+  <text x="314" y="187" fill="#71857d" font-family="Arial,sans-serif" font-size="14">Worker records</text>
+  <text x="582" y="187" fill="#71857d" font-family="Arial,sans-serif" font-size="14">Attendance</text>
+  <text x="850" y="187" fill="#71857d" font-family="Arial,sans-serif" font-size="14">Payroll records</text>
+  <path d="M314 211h155m113 0h155m113 0h184" stroke="#72bf8e" stroke-linecap="round" stroke-width="7"/>
+  <rect x="292" y="260" width="822" height="333" rx="10" fill="#fff" stroke="#e2ebe5"/>
+  <text x="316" y="296" fill="#18352e" font-family="Arial,sans-serif" font-size="17" font-weight="700">Worker directory</text>
+  <rect x="316" y="316" width="774" height="40" rx="6" fill="#f3f7f4"/>
+  <g fill="#71857d" font-family="Arial,sans-serif" font-size="12" font-weight="700">
+    <text x="334" y="341">WORKER</text><text x="607" y="341">ROLE</text><text x="810" y="341">ATTENDANCE</text><text x="987" y="341">PAYROLL</text>
+  </g>
+  <g stroke="#e8efea"><path d="M316 397h774m-774 57h774m-774 57h774"/></g>
+  <g fill="#244438" font-family="Arial,sans-serif" font-size="14">
+    <text x="334" y="384">Worker profile</text><text x="607" y="384">Field work</text><text x="810" y="384">Daily record</text><text x="987" y="384">View record</text>
+    <text x="334" y="441">Worker profile</text><text x="607" y="441">Field work</text><text x="810" y="441">Daily record</text><text x="987" y="441">View record</text>
+    <text x="334" y="498">Worker profile</text><text x="607" y="498">Field work</text><text x="810" y="498">Daily record</text><text x="987" y="498">View record</text>
   </g>
 </svg>

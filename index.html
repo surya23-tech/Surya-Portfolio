@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya D | Portfolio</title>
+    <title>Surya D | Cloud & Software Engineering Portfolio</title>
+    <meta name="description" content="Surya D is a Computer Science Engineering student focused on cloud computing, Java development, AI, and scalable software.">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
@@ -28,11 +29,11 @@
 
 <header>
 
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
 
-<div class="logo">
+<a class="logo" href="#home" aria-label="Surya D, home">
 Surya <span>D</span>
-</div>
+</a>
 
 <ul class="nav-links" id="navLinks">
 
@@ -52,11 +53,11 @@ Surya <span>D</span>
 
 <div class="nav-icons">
 
-<button id="theme-toggle" aria-pressed="false" title="Toggle theme">
+<button id="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Toggle theme" type="button">
 <i class="fa-solid fa-moon"></i>
 </button>
 
-<button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="navLinks" title="Toggle menu">
+<button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu" title="Open menu" type="button">
 <i class="fa-solid fa-bars"></i>
 </button>
 
@@ -84,7 +85,7 @@ Surya <span>D</span>
                 <span class="name gradient">Surya D</span>
             </h1>
 
-            <div id="subtitle-pills" class="subtitle-pills" aria-hidden="false"></div>
+            <div id="subtitle-pills" class="subtitle-pills" aria-label="Cloud Engineer, Java Developer, AI Enthusiast"></div>
 
             <p class="hero-description">
                 I am a Third Year Computer Science Engineering student at PSNA College of Engineering and Technology, passionate about Cloud Computing, Java Development, Artificial Intelligence, and building scalable applications. I enjoy learning modern technologies and solving real-world problems through innovative software solutions.
@@ -115,7 +116,7 @@ Surya <span>D</span>
         <div class="hero-right" data-aos="fade-up">
             <div class="profile-card glass">
                 <div class="profile-glow"></div>
-                <img src="assets/images/profile.jpeg" alt="Surya D" class="profile-photo">
+                <img src="assets/images/profile.jpeg" alt="Surya D wearing a dark suit and tie" class="profile-photo" width="1079" height="1254" fetchpriority="high">
             </div>
         </div>
 
@@ -427,6 +428,15 @@ Completed Higher Secondary with Computer Science stream and developed a strong i
 
 </div>
 
+<div class="skill-card tools-card" data-aos="zoom-in">
+<h3>Cloud, AI &amp; Data</h3>
+<ul class="skill-tags" aria-label="Related technical areas">
+    <li><i class="fa-solid fa-cloud" aria-hidden="true"></i> Cloud Computing</li>
+    <li><i class="fa-solid fa-brain" aria-hidden="true"></i> Artificial Intelligence</li>
+    <li><i class="fa-solid fa-database" aria-hidden="true"></i> Database Technologies</li>
+</ul>
+</div>
+
 </div>
 
 </section>
@@ -444,7 +454,7 @@ Completed Higher Secondary with Computer Science stream and developed a strong i
 
 <div class="project-card" data-aos="fade-up">
     <div class="project-thumb">
-        <img src="assets/projects/smartcart.svg" alt="SmartCart thumbnail">
+        <img src="assets/projects/smartcart.svg" alt="SmartCart storefront with search and featured products">
     </div>
     <div class="project-content">
         <h3>SmartCart E-Commerce Website</h3>
@@ -470,7 +480,7 @@ Completed Higher Secondary with Computer Science stream and developed a strong i
 
 <div class="project-card" data-aos="fade-up">
     <div class="project-thumb">
-        <img src="assets/projects/farmer.svg" alt="Farmer Labour Management thumbnail">
+        <img src="assets/projects/farmer.svg" alt="Farmer labour dashboard with worker, attendance, and payroll records">
     </div>
     <div class="project-content">
         <h3>Farmer Labour Management System</h3>
@@ -493,7 +503,7 @@ Completed Higher Secondary with Computer Science stream and developed a strong i
 
 <div class="project-card" data-aos="fade-up">
     <div class="project-thumb">
-        <img src="assets/projects/restaurant.svg" alt="Restaurant Billing thumbnail">
+        <img src="assets/projects/restaurant.svg" alt="Restaurant billing screen with menu items and an order summary">
     </div>
     <div class="project-content">
         <h3>Restaurant Billing System</h3>
@@ -516,7 +526,7 @@ Desktop Java Swing application to automate restaurant billing (academic project)
 
 <div class="project-card" data-aos="fade-up">
     <div class="project-thumb">
-        <img src="assets/projects/moviefinder.svg" alt="Movie Finder thumbnail">
+        <img src="assets/projects/moviefinder.svg" alt="Movie Finder search screen with illustrated film results">
     </div>
     <div class="project-content">
         <h3>Movie Finder</h3>
@@ -629,28 +639,39 @@ Tamil Nadu, India
 <!-- Contact form: EmailJS integration (no FormSubmit) -->
 <form id="contact-form" class="contact-form">
 
+<label for="contact-name">Name</label>
+
 <input
 type="text"
 name="from_name"
 id="contact-name"
-placeholder="Your Name"
+autocomplete="name"
+maxlength="100"
+placeholder="Your name"
 required>
+
+<label for="contact-email">Email</label>
 
 <input
 type="email"
 name="from_email"
 id="contact-email"
-placeholder="Your Email"
+autocomplete="email"
+maxlength="254"
+placeholder="you@example.com"
 required>
+
+<label for="contact-message">Message</label>
 
 <textarea
 name="message"
 id="contact-message"
 rows="6"
-placeholder="Message"
+maxlength="3000"
+placeholder="How can I help?"
 required></textarea>
 
-<div id="form-status" class="form-status" aria-live="polite" style="display:none;"></div>
+<div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
 
 <button id="contact-submit" class="btn primary" type="submit">
 
@@ -682,13 +703,20 @@ Computer Science Engineering Student
 
 <p>
 
+<div class="footer-socials" aria-label="Social media links">
+    <a href="https://github.com/surya23-tech" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+    <a href="https://linkedin.com/in/surya-d-80b869333" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/itz_surya_151?igsh=MWpwYjNlY285dXBkbg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    <a href="mailto:surya11066@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+</div>
+
 © 2026 All Rights Reserved.
 
 </p>
 
 </footer>
 
-<a href="#" id="scrollTop">
+<a href="#home" id="scrollTop" aria-label="Back to top">
 
 <i class="fa-solid fa-arrow-up"></i>
 
