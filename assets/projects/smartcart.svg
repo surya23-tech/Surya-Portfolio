@@ -1,30 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
-  <defs>
-    <linearGradient id="g1" x1="0" x2="1">
-      <stop offset="0%" stop-color="#4f46e5"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
-    </linearGradient>
-  </defs>
-  <rect width="100%" height="100%" fill="url(#g1)" />
-  <!-- laptop -->
-  <g transform="translate(160,220) scale(1.1)">
-    <rect x="140" y="60" width="820" height="460" rx="20" fill="#fff" opacity="0.08" />
-    <rect x="170" y="100" width="760" height="360" rx="10" fill="#0f172a" opacity="0.12" />
-    <rect x="220" y="140" width="660" height="260" rx="8" fill="#ffffff22" />
-    <!-- UI cards -->
-    <rect x="240" y="160" width="320" height="80" rx="8" fill="#ffffff22" />
-    <rect x="240" y="260" width="300" height="90" rx="8" fill="#ffffff15" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">SmartCart storefront interface illustration</title>
+  <rect width="1200" height="675" fill="#edf4fb"/>
+  <rect x="48" y="38" width="1104" height="599" rx="22" fill="#fff"/>
+  <path d="M48 60q0-22 22-22h1060q22 0 22 22v66H48z" fill="#fff"/>
+  <circle cx="83" cy="82" r="17" fill="#1768d2"/>
+  <path d="M75 77h5l4 15h18l4-11H82m5 17h1m13 0h1" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <text x="112" y="89" fill="#122239" font-family="Arial,sans-serif" font-size="25" font-weight="700">SmartCart</text>
+  <rect x="331" y="62" width="390" height="40" rx="9" fill="#f2f6fa"/>
+  <circle cx="355" cy="82" r="7" fill="none" stroke="#708198" stroke-width="2"/>
+  <path d="m360 87 6 6" stroke="#708198" stroke-width="2"/>
+  <text x="379" y="88" fill="#8492a5" font-family="Arial,sans-serif" font-size="15">Search products</text>
+  <rect x="1005" y="63" width="105" height="38" rx="9" fill="#1768d2"/>
+  <text x="1030" y="87" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">My cart</text>
+  <path d="M48 126h1104" stroke="#e7edf4"/>
+  <text x="91" y="179" fill="#122239" font-family="Arial,sans-serif" font-size="28" font-weight="700">Featured products</text>
+  <text x="91" y="204" fill="#718198" font-family="Arial,sans-serif" font-size="15">Everyday essentials, selected for you</text>
+  <g transform="translate(91 231)">
+    <rect width="315" height="340" rx="14" fill="#f7f9fc" stroke="#e6edf4"/>
+    <rect x="18" y="18" width="279" height="190" rx="10" fill="#dceafa"/>
+    <rect x="81" y="60" width="154" height="98" rx="8" fill="#243b58"/>
+    <rect x="90" y="69" width="136" height="78" rx="4" fill="#77c7d5"/>
+    <path d="M63 164h190l-16 12H79z" fill="#526b86"/>
+    <text x="22" y="244" fill="#122239" font-family="Arial,sans-serif" font-size="17" font-weight="700">Laptop</text>
+    <text x="22" y="270" fill="#718198" font-family="Arial,sans-serif" font-size="14">Computers and accessories</text>
+    <text x="22" y="310" fill="#1768d2" font-family="Arial,sans-serif" font-size="18" font-weight="700">Explore product</text>
   </g>
-  <!-- mobile -->
-  <g transform="translate(1040,300)">
-    <rect x="0" y="0" width="220" height="420" rx="30" fill="#ffffff14" />
-    <rect x="24" y="36" width="172" height="72" rx="10" fill="#ffffff22" />
-    <rect x="24" y="120" width="172" height="220" rx="12" fill="#ffffff0f" />
+  <g transform="translate(442 231)">
+    <rect width="315" height="340" rx="14" fill="#f7f9fc" stroke="#e6edf4"/>
+    <rect x="18" y="18" width="279" height="190" rx="10" fill="#e6f4f1"/>
+    <path d="M93 105q13-34 40-20l36 20 34-4q22-2 26 16l-45 26-61-8-28 15-24-11z" fill="#f5fdff" stroke="#078f9c" stroke-width="5" stroke-linejoin="round"/>
+    <path d="m99 147 17 9m18-4 18 7m17-8 19 5" stroke="#078f9c" stroke-linecap="round" stroke-width="4"/>
+    <text x="22" y="244" fill="#122239" font-family="Arial,sans-serif" font-size="17" font-weight="700">Everyday style</text>
+    <text x="22" y="270" fill="#718198" font-family="Arial,sans-serif" font-size="14">Shop the latest collection</text>
+    <text x="22" y="310" fill="#1768d2" font-family="Arial,sans-serif" font-size="18" font-weight="700">Explore product</text>
   </g>
-  <!-- shopping cart icon simplified -->
-  <g transform="translate(80,560) scale(1.6)">
-    <rect x="0" y="0" width="160" height="100" rx="12" fill="#ffffff22" />
-    <circle cx="40" cy="120" r="14" fill="#fff" opacity="0.9" />
-    <circle cx="120" cy="120" r="14" fill="#fff" opacity="0.9" />
+  <g transform="translate(793 231)">
+    <rect width="315" height="340" rx="14" fill="#f7f9fc" stroke="#e6edf4"/>
+    <rect x="18" y="18" width="279" height="190" rx="10" fill="#eef0fa"/>
+    <path d="M105 91v39a41 41 0 0 0 82 0V91" fill="none" stroke="#6554c0" stroke-linecap="round" stroke-width="17"/>
+    <path d="M98 91v19m96-19v19" stroke="#263b59" stroke-linecap="round" stroke-width="10"/>
+    <text x="22" y="244" fill="#122239" font-family="Arial,sans-serif" font-size="17" font-weight="700">Wireless audio</text>
+    <text x="22" y="270" fill="#718198" font-family="Arial,sans-serif" font-size="14">Audio and electronics</text>
+    <text x="22" y="310" fill="#1768d2" font-family="Arial,sans-serif" font-size="18" font-weight="700">Explore product</text>
   </g>
 </svg>

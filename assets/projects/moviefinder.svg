@@ -1,23 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
-  <defs>
-    <linearGradient id="g3" x1="0" x2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0f172a"/>
-    </linearGradient>
-  </defs>
-  <rect width="100%" height="100%" fill="#0b1220" />
-  <!-- search bar -->
-  <g transform="translate(200,80)">
-    <rect x="0" y="0" width="1200" height="100" rx="14" fill="#ffffff10" />
-    <rect x="24" y="22" width="480" height="56" rx="8" fill="#ffffff12" />
-  </g>
-  <!-- movie posters row -->
-  <g transform="translate(140,220)">
-    <rect x="0" y="0" width="220" height="320" rx="8" fill="#ffffff12" />
-    <rect x="260" y="0" width="220" height="320" rx="8" fill="#ffffff12" />
-    <rect x="520" y="0" width="220" height="320" rx="8" fill="#ffffff12" />
-    <rect x="780" y="0" width="220" height="320" rx="8" fill="#ffffff12" />
-    <!-- red play accent -->
-    <circle cx="1050" cy="380" r="34" fill="#ef4444" opacity="0.95" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Movie Finder search and film results interface illustration</title>
+  <rect width="1200" height="675" fill="#101827"/>
+  <rect x="42" y="36" width="1116" height="603" rx="20" fill="#182437"/>
+  <circle cx="87" cy="84" r="22" fill="#4bbac4"/>
+  <path d="M80 75h14v18H80z" fill="none" stroke="#10202e" stroke-width="3"/><path d="m84 79 7 5-7 5z" fill="#10202e"/>
+  <text x="122" y="91" fill="#f2f6fb" font-family="Arial,sans-serif" font-size="22" font-weight="700">Movie Finder</text>
+  <rect x="665" y="61" width="438" height="47" rx="10" fill="#223149" stroke="#34465d"/>
+  <circle cx="691" cy="83" r="7" fill="none" stroke="#93a5ba" stroke-width="2"/><path d="m696 88 6 6" stroke="#93a5ba" stroke-width="2"/>
+  <text x="717" y="89" fill="#a9b7c8" font-family="Arial,sans-serif" font-size="14">Search for a movie</text>
+  <text x="83" y="166" fill="#f2f6fb" font-family="Arial,sans-serif" font-size="26" font-weight="700">Discover films</text>
+  <text x="83" y="192" fill="#9cacc0" font-family="Arial,sans-serif" font-size="14">Find a title and explore its details</text>
+  <g transform="translate(83 220)">
+    <g>
+      <rect width="235" height="320" rx="12" fill="#263a50"/>
+      <rect x="12" y="12" width="211" height="225" rx="8" fill="#365977"/>
+      <circle cx="114" cy="112" r="67" fill="#e6a66f"/><path d="M48 176q62-96 132-4v53H48z" fill="#253d5d"/><path d="M71 75q40-72 88 0" fill="none" stroke="#bde1da" stroke-width="10"/>
+      <text x="16" y="270" fill="#edf3f9" font-family="Arial,sans-serif" font-size="15" font-weight="700">Featured result</text>
+      <text x="16" y="294" fill="#9cacc0" font-family="Arial,sans-serif" font-size="12">Film details</text>
+    </g>
+    <g transform="translate(254)">
+      <rect width="235" height="320" rx="12" fill="#263a50"/>
+      <rect x="12" y="12" width="211" height="225" rx="8" fill="#3a385f"/>
+      <circle cx="113" cy="118" r="67" fill="#c97765"/><path d="M46 177q62-62 134 0v60H46z" fill="#252d4a"/><path d="M66 70h93" stroke="#f1d89b" stroke-width="11" stroke-linecap="round"/>
+      <text x="16" y="270" fill="#edf3f9" font-family="Arial,sans-serif" font-size="15" font-weight="700">Search result</text>
+      <text x="16" y="294" fill="#9cacc0" font-family="Arial,sans-serif" font-size="12">Film details</text>
+    </g>
+    <g transform="translate(508)">
+      <rect width="235" height="320" rx="12" fill="#263a50"/>
+      <rect x="12" y="12" width="211" height="225" rx="8" fill="#31505a"/>
+      <circle cx="113" cy="113" r="65" fill="#d3a05f"/><path d="M48 164q64-78 130 0v73H48z" fill="#293b4e"/><path d="M77 63q34 22 72 0" fill="none" stroke="#e9d8b7" stroke-width="9"/>
+      <text x="16" y="270" fill="#edf3f9" font-family="Arial,sans-serif" font-size="15" font-weight="700">Search result</text>
+      <text x="16" y="294" fill="#9cacc0" font-family="Arial,sans-serif" font-size="12">Film details</text>
+    </g>
+    <g transform="translate(762)">
+      <rect width="235" height="320" rx="12" fill="#263a50"/>
+      <rect x="12" y="12" width="211" height="225" rx="8" fill="#5b3e50"/>
+      <circle cx="114" cy="112" r="67" fill="#de826b"/><path d="M48 171q66-85 132 0v66H48z" fill="#2e3349"/><path d="m78 65 34-23 35 23" fill="none" stroke="#f1c885" stroke-width="8"/>
+      <text x="16" y="270" fill="#edf3f9" font-family="Arial,sans-serif" font-size="15" font-weight="700">Search result</text>
+      <text x="16" y="294" fill="#9cacc0" font-family="Arial,sans-serif" font-size="12">Film details</text>
+    </g>
   </g>
 </svg>

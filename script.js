@@ -2,42 +2,13 @@
    AOS Animation
 =========================== */
 
-AOS.init({
-    duration:1000,
-    once:true
-});
-
-/* ===========================
-   Typing Animation
-=========================== */
-
-const badgeText = document.getElementById("hero-badge-text");
-const badgePhrase = "ASPIRING CLOUD ENGINEER";
-let badgeIndex = 0;
-let badgeDeleting = false;
-
-function badgeTypeEffect(){
-    if(!badgeText) return;
-    if(!badgeDeleting){
-        badgeText.textContent = badgePhrase.substring(0, badgeIndex + 1);
-        badgeIndex += 1;
-        if(badgeIndex === badgePhrase.length){
-            badgeDeleting = true;
-            setTimeout(badgeTypeEffect, 1200);
-            return;
-        }
-    } else {
-        badgeIndex -= 1;
-        if(badgeIndex < 0) badgeIndex = 0;
-        badgeText.textContent = badgePhrase.substring(0, badgeIndex);
-        if(badgeIndex === 0){
-            badgeDeleting = false;
-        }
-    }
-    setTimeout(badgeTypeEffect, badgeDeleting ? 80 : 120);
+if(window.AOS){
+    AOS.init({
+        duration:700,
+        once:true,
+        disable:window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    });
 }
-
-badgeTypeEffect();
 
 /* ===========================
    Dark Mode
@@ -46,37 +17,38 @@ badgeTypeEffect();
 const themeBtn =
 document.getElementById("theme-toggle");
 
-// Restore theme preference
-(function(){
-    const stored = localStorage.getItem('theme');
-    if(stored === 'dark'){
-        document.body.classList.add('dark');
-        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-        themeBtn.setAttribute('aria-pressed','true');
-    }else{
-        themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        themeBtn.setAttribute('aria-pressed','false');
+function setTheme(isDark, savePreference = false){
+    if(!themeBtn) return;
+    document.body.classList.toggle('dark', isDark);
+    themeBtn.setAttribute('aria-pressed', String(isDark));
+    themeBtn.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+    themeBtn.innerHTML = isDark
+        ? '<i class="fa-solid fa-sun" aria-hidden="true"></i>'
+        : '<i class="fa-solid fa-moon" aria-hidden="true"></i>';
+
+    if(savePreference){
+        try{
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }catch(error){
+            console.warn('Theme preference could not be saved.', error);
+        }
     }
-})();
-
-themeBtn.onclick = () => {
-
-const pressed = themeBtn.getAttribute('aria-pressed') === 'true';
-const willDark = !pressed;
-
-themeBtn.setAttribute('aria-pressed', willDark.toString());
-
-if(willDark){
-    document.body.classList.add('dark');
-    themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-    localStorage.setItem('theme','dark');
-}else{
-    document.body.classList.remove('dark');
-    themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-    localStorage.setItem('theme','light');
 }
 
-};
+let savedTheme = null;
+try{
+    savedTheme = localStorage.getItem('theme');
+}catch(error){
+    console.warn('Theme preference could not be restored.', error);
+}
+
+setTheme(savedTheme === 'dark');
+
+if(themeBtn){
+    themeBtn.addEventListener('click',()=>{
+        setTheme(!document.body.classList.contains('dark'),true);
+    });
+}
 
 /* ===========================
    Scroll To Top
@@ -126,6 +98,13 @@ function openDrawer(){
     drawer.classList.add('active');
     drawer.setAttribute('aria-hidden','false');
     document.body.style.overflow = 'hidden';
+    if(menu){
+        menu.setAttribute('aria-expanded','true');
+        menu.setAttribute('aria-label','Close navigation menu');
+        menu.title = 'Close menu';
+        menu.innerHTML = '<i class="fa-solid fa-xmark" aria-hidden="true"></i>';
+    }
+    if(drawerClose) drawerClose.focus();
 }
 
 function closeDrawer(){
@@ -133,7 +112,13 @@ function closeDrawer(){
     drawer.classList.remove('active');
     drawer.setAttribute('aria-hidden','true');
     document.body.style.overflow = '';
-    if(menu) menu.setAttribute('aria-expanded','false');
+    if(menu){
+        menu.setAttribute('aria-expanded','false');
+        menu.setAttribute('aria-label','Open navigation menu');
+        menu.title = 'Open menu';
+        menu.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+        menu.focus();
+    }
 }
 
 if(menu){
@@ -286,13 +271,12 @@ const EMAILJS_TEMPLATE_ID = 'template_cwdpn57';
 
 // Initialize EmailJS with v4 API format
 function initializeEmailJS(){
-    if(typeof emailjs !== 'undefined'){
-        emailjs.init({
+    if(window.emailjs){
+        window.emailjs.init({
             publicKey: EMAILJS_PUBLIC_KEY
         });
-        console.log('✓ EmailJS v4 initialized successfully with public key:', EMAILJS_PUBLIC_KEY);
     } else {
-        console.error('✗ EmailJS library not available. CDN may not have loaded.');
+        console.warn('EmailJS is unavailable; the contact form will report a delivery error.');
     }
 }
 
@@ -306,7 +290,7 @@ if(document.readyState === 'loading'){
 function updateFormStatus(message, type = 'info'){
     const status = document.getElementById('form-status');
     if(!status) return;
-    status.style.display = 'block';
+    status.hidden = false;
     status.textContent = message;
     status.className = 'form-status ' + type;
 }
@@ -327,14 +311,22 @@ function setupContactForm(){
         updateFormStatus('Sending message...', 'pending');
 
         try {
-            // Map form fields to EmailJS template variables
-            const templateParams = {
-                name: document.getElementById('contact-name').value,
-                email: document.getElementById('contact-email').value,
-                message: document.getElementById('contact-message').value
-            };
+            if(!window.emailjs){
+                throw new Error('The email service is unavailable. Please email surya11066@gmail.com directly.');
+            }
 
-            console.log('Sending with params:', templateParams);
+            // Map form fields to EmailJS template variables
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const message = document.getElementById('contact-message').value.trim();
+            const templateParams = {
+                name,
+                email,
+                message,
+                from_name: name,
+                from_email: email,
+                reply_to: email
+            };
 
             const response = await emailjs.send(
                 EMAILJS_SERVICE_ID,
@@ -349,25 +341,14 @@ function setupContactForm(){
             // Hide success message after 5 seconds
             setTimeout(() => {
                 const status = document.getElementById('form-status');
-                if(status) status.style.display = 'none';
+                if(status) status.hidden = true;
             }, 5000);
         } catch(error) {
-            console.error('EmailJS error object:', error);
-            
-            // Extract detailed error message
-            let errorMessage = 'Failed to send message. ';
-            if(error.text) {
-                errorMessage += error.text;
-            } else if(error.message) {
-                errorMessage += error.message;
-            } else if(error.status) {
-                errorMessage += `Error status: ${error.status}`;
-            } else {
-                errorMessage += 'Please check your connection and try again.';
-            }
-            
-            console.error('Formatted error:', errorMessage);
-            updateFormStatus('✗ ' + errorMessage, 'error');
+            console.error('Email submission failed.', error);
+            updateFormStatus(
+                error.message || 'Message could not be sent. Please try again or email surya11066@gmail.com directly.',
+                'error'
+            );
         } finally {
             if(submitButton) submitButton.disabled = false;
         }
@@ -410,14 +391,16 @@ function configureGitHubButtons(){
             btn.setAttribute('title', 'View Repository');
             btn.classList.remove('disabled');
             btn.removeAttribute('aria-disabled');
+            btn.removeAttribute('tabindex');
             btn.innerHTML = icon + ' GitHub';
         }else{
             // Disable the button and show Coming Soon
             btn.setAttribute('href', '#');
             btn.setAttribute('title', 'Repository will be uploaded soon.');
             btn.setAttribute('aria-disabled', 'true');
+            btn.setAttribute('tabindex', '-1');
             btn.classList.add('disabled');
-            btn.innerHTML = icon + ' Coming Soon';
+            btn.innerHTML = icon + ' Repository unavailable';
         }
     });
 }
